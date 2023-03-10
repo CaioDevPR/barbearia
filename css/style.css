@@ -141,10 +141,10 @@ color: var(--amarelo);
 
 @keyframes animate-outline{
     from{
-      outline: 0px solid #d9eb3c;
+      outline: 0px solid  var(--amarelo);
     }
     to{
-      outline: 5px solid #caeb37;
+      outline: 5px solid  var(--amarelo);
     }
 }
 
@@ -182,6 +182,8 @@ color: var(--amarelo);
 
 @media (max-width: 830px){
     /* menu modile */
+
+  
     .ul{
      position: fixed;
      top: 0;
@@ -228,7 +230,7 @@ color: var(--amarelo);
      }
      
      .banner-principal .banner p{
-        font-size: 20px;
+        font-size: 3rem;
         text-align: right;
         border-radius: 10px;
         background-color: var(--black);
@@ -242,6 +244,7 @@ color: var(--amarelo);
         margin: 0 auto;
         padding: 0 5%;
         height: ;
+        
     }
 
     .banner-principal{
@@ -257,10 +260,18 @@ color: var(--amarelo);
         padding: 0 20px;
      }
 
-     #principal{
-        background-image: url(/imagens/fundofer.jpg);
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
+     nav ul a{
+        color: var(--padrao);
+        border: 1px solid var(--padrao);
+        border-radius: 14px;
+        padding: 10px;
+        background-color: var(--nav);
+        margin: 0 25px;
+        text-transform: uppercase;
+        font-size: 14px;
+        display: block;
+    
     }
+
+     
  }
