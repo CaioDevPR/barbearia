@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2? family= EB+Garamond:wght@400;700;800 & family= Inter:wght@500;600;700 & display=swap' );
+
 *{
     margin: 0;
     padding: 0;
@@ -118,13 +120,16 @@ nav .close-icon{
  }
 
  .banner-principal .banner p{
-    font-size: 50px;
+    font-size: 6rem;
     text-align: center;
     border-radius: 10px;
     background-color: var(--black);
     color: var(--padrao);
-    font-weight: 900;
+    font-weight: 700;
     margin: 23px 0;
+    font-family: 'EB Garamond', serif;
+    
+    
 }
 
 .banner-principal .banner p span{
@@ -222,7 +227,7 @@ color: var(--amarelo);
     }
 
     .banner-principal .banner img{
-        width: ;
+    
         animation-duration: 3s;
        animation-name: rapidaanimate;
        animation-iteration-count:initial;
@@ -230,7 +235,7 @@ color: var(--amarelo);
      }
      
      .banner-principal .banner p{
-        font-size: 3rem;
+        font-size: 2rem;
         text-align: right;
         border-radius: 10px;
         background-color: var(--black);
@@ -272,6 +277,6 @@ color: var(--amarelo);
         display: block;
     
     }
-
+   
      
  }
