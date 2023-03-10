@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,30 +8,50 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>Barbearia Corte Fino</title>
 </head>
+
 <body>
     <!--Header-->
     <header id="principal">
         <div class="container">
             <nav>
-                <a href="index.html"><h1>Corte <span>Fino</span></h1></a>
+                <a href="index.html">
+                    <h1>Corte <span>Fino</span></h1>
+                </a>
 
                 <ul class="ul">
                     <a href="">HOME</a>
                     <a href="">Serviços</a>
                     <a href="">Barbeiros</a>
                     <a href="">Agendamento</a>
-                </ul>
 
+                    <div class="close-icon" onclick="closeMenu()">
+                        <i class="fa fa-times-circle"></i>
+                    </div>
+                </ul>
+                <div class="menu-icon" onclick="openMenu()">
+                    <i class="fa fa-bars"></i>
+                </div>
 
             </nav>
+            <section class="banner-principal">
+                <div class="banner">
+                    <img src="/imagens/logocabecalho.png" alt="logo barbearia">
+                    <p>A Melhor <span>Barbearia</span> da Cidade</p>
+
+                    <a href="https://wa.me/5543999605565" target="_blank" class="btn botao-animado">Começar</a>
+                </div>
+            </section>
+        </div>
         </div>
     </header>
     <!--Fim Header-->
 
-    <section class="baner-barbearia">
 
-
-    </section>
-    
+    <script src="/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/e43db87a80.js" crossorigin="anonymous"></script>
+    <scrit type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+        </script>
+        <script nomodule src="https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
