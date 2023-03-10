@@ -199,6 +199,7 @@ color: var(--amarelo);
  
     .ul.open{
      clip-path: circle(93.3% at 100% 0);
+     background-color: var(--amarelo);
  
     }
     .ul a {
@@ -208,13 +209,14 @@ color: var(--amarelo);
     }
     nav .menu-icon{
      display: block;
-     color: var(--white);
+     color: var(--padrao);
     }
     nav .close-icon{
      display: block;
      position: absolute;
      top: 46px;
      height: 28px;
+     color: var(--padrao)
     }
 
     .banner-principal .banner img{
