@@ -9,10 +9,15 @@
     font-family: 'inter', sans-serif;
 }
 
+body{
+    background-color: var(--fundoBody);
+}
+
 :root{
   --nav: #000;
   --padrao: #fff;
   --amarelo: #ebc466;
+  --fundoBody: #212123;
 }
 
 section,footer {
@@ -136,9 +141,7 @@ nav .close-icon{
 color: var(--amarelo);
 }
 
-.botao-animado{
 
-}
 
 .btn.botao-animado{
     animation: animate-outline 1s ease-out infinite;
@@ -166,6 +169,59 @@ color: var(--amarelo);
 
 .btn:hover{
     background-color: var(--azul);
+}
+
+
+
+
+/* SOBRE */
+.sobre .container{
+    display: flex;
+    align-items: center;
+}
+
+.sobre .sobre-barber img{
+width: 30%;
+}
+
+.sobre-barber{
+    width: 50%;
+    padding: 0 40px;
+}
+
+.sobre .sobre-barber h3{
+    font-size: 56px;
+    color: var(--padrao);
+    font-family: 'EB Garamond', serif;
+    padding-bottom: 40px;
+
+}
+
+.sobre .sobre-barber p{
+    font-size: 1.4rem;
+    margin: 5px 0 10px 0;
+    color: var(--nav);
+    background-color: var(--nav);
+    color: var(--padrao);
+    border-radius: 30px ;
+    padding: 20px;
+    border: 1px solid var(--amarelo);
+}
+.sobre .sobre-barber p:hover{
+    background-color: var(--padrao);
+    color: var(--nav);
+    
+}
+
+.sobre-barber span{
+color: var(--amarelo);
+}
+
+
+
+
+.sobre .sobre-img img{
+    width: 70%;
 }
 
 /* animações */
@@ -226,11 +282,12 @@ color: var(--amarelo);
      color: var(--padrao)
     }
 
-    .banner-principal .banner img{
+    .banner-principal .banner p a{
     
         animation-duration: 3s;
        animation-name: rapidaanimate;
        animation-iteration-count:initial;
+       
         
      }
      
