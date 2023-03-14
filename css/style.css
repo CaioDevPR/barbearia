@@ -80,7 +80,7 @@ nav ul a:not(.btn)::after{
  }
 
 #principal{
-    background-image: url(/imagens/fundofer.jpg);
+    background-image: url(/imagens/imagem\ barbearia.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -116,8 +116,8 @@ nav .close-icon{
     padding: 0 20px;
  }
 
- .banner-principal .banner img{
-    width: 30%;
+  .banner {
+    width: 100%;
     animation-duration: 3s;
    animation-name: rapidaanimate;
    animation-iteration-count:initial;
@@ -192,8 +192,6 @@ width: 30%;
 .sobre .sobre-barber h3{
     font-size: 56px;
     color: var(--padrao);
-    font-family: 'EB Garamond', serif;
-    padding-bottom: 40px;
 
 }
 
@@ -212,12 +210,6 @@ width: 30%;
     color: var(--nav);
     
 }
-
-.sobre-barber span{
-color: var(--amarelo);
-}
-
-
 
 
 .sobre .sobre-img img{
