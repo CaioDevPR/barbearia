@@ -11,6 +11,7 @@
 
 body{
     background-color: var(--fundoBody);
+    overflow: hidden;
 }
 
 :root{
@@ -88,6 +89,13 @@ nav ul a:not(.btn)::after{
 
 }
 
+.banner-principal{
+    position: relative;
+    margin-top: 15%;
+}
+.banner-principal .animada .img{
+width: 50px;
+}
 nav .menu-icon{
     cursor: pointer;
     font: 25px;
@@ -100,6 +108,18 @@ nav .close-icon{
     font-size: 30px;
     color: var(--amarelo);
 }
+
+.animada{
+    
+    display: flex;
+    justify-content: center;
+    animation-duration: 3s;
+    animation-name: rapidaanimate;
+    animation-iteration-count:initial;
+}
+#imga{
+    transform:translatex(6px) translatey(-306px);
+   }
 
 
 
@@ -141,7 +161,15 @@ nav .close-icon{
 color: var(--amarelo);
 }
 
-
+.btn{
+    background-color: var(--nav);
+    color: var(--padrao);
+    padding: 6px 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.1s ;
+}
 
 .btn.botao-animado{
     animation: animate-outline 1s ease-out infinite;
@@ -209,7 +237,7 @@ width: 30%;
    
 @keyframes rapidaanimate {
     from {
-        margin-top: 100%;
+        margin-top: 100vh;
         width: 300%;
     }
     to {
@@ -274,6 +302,9 @@ width: 30%;
     .banner-principal{
         position: relative;
         margin-top: 80%;
+    }
+    .animada{
+        display: none;
     }
    
      
