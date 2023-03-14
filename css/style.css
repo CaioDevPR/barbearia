@@ -192,46 +192,32 @@ color: var(--amarelo);
 
 
 /* SOBRE */
-.sobre .container{
+.sobre-barber .container{
     display: flex;
     align-items: center;
 }
 
-.sobre .sobre-barber img{
-width: 30%;
-}
-
-.sobre-barber{
+.sobre-barber-texto{
     width: 50%;
     padding: 0 40px;
 }
 
-.sobre .sobre-barber h3{
+.sobre-barber-texto .sobre-barber-img{
+    width: 50%;
+}
+
+.sobre-barber .sobre-barber-texto h3{
     font-size: 56px;
-    color: var(--padrao);
-
 }
 
-.sobre .sobre-barber p{
-    font-size: 1.4rem;
+.sobre-barber .sobre-barber-texto p {
     margin: 5px 0 10px 0;
-    color: var(--nav);
-    background-color: var(--nav);
     color: var(--padrao);
-    border-radius: 30px ;
-    padding: 20px;
-    border: 1px solid var(--amarelo);
-}
-.sobre .sobre-barber p:hover{
-    background-color: var(--padrao);
-    color: var(--nav);
-    
 }
 
 
-.sobre .sobre-img img{
-    width: 70%;
-}
+
+
 
 /* animações */
    
