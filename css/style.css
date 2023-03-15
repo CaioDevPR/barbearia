@@ -296,6 +296,12 @@ display: flex;
     margin-left: 0;
 }
 
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+
+
 
 
 
