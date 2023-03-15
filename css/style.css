@@ -292,6 +292,10 @@ display: flex;
     background-color: var(--padrao);
 }
 
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
 
 
 
