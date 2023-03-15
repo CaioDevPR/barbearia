@@ -144,7 +144,7 @@ nav .close-icon{
     
  }
 
- .banner-principal .banner p{
+ .banner-principal .banner h3{
     font-size: 6rem;
     text-align: center;
     border-radius: 10px;
@@ -215,7 +215,9 @@ color: var(--amarelo);
     color: var(--padrao);
 }
 
-
+.redes-sociais{
+    display: none;
+}
 
 
 
@@ -248,7 +250,7 @@ color: var(--amarelo);
      position: fixed;
      top: 0;
      left: 0;
-     background: var(--black);
+     background: var(--padrao);
      width: 100%;
      height: 100%;
      flex-direction: column;
@@ -260,8 +262,8 @@ color: var(--amarelo);
     }
  
     .ul.open{
-     clip-path: circle(93.3% at 100% 0);
-     background-color: var(--amarelo);
+     clip-path: circle(100% at 100% );
+     background-color: var(--padrao);
  
     }
     .ul a {
@@ -282,7 +284,7 @@ color: var(--amarelo);
      position: absolute;
      top: 46px;
      height: 28px;
-     color: var(--padrao)
+     color: var(--nav)
     }
 
     .banner-principal{
@@ -294,7 +296,7 @@ color: var(--amarelo);
     }
    
      
-     .banner-principal .banner p{
+     .banner-principal .banner h3{
         font-size: 3rem;
         text-align: right;
         border-radius: 10px;
@@ -341,17 +343,29 @@ color: var(--amarelo);
      }
 
      nav ul a{
-        color: var(--padrao);
-        border: 1px solid var(--padrao);
+        color: var(--nav);
+        border: 1px solid var(--nav);
         border-radius: 14px;
         padding: 10px;
-        background-color: var(--nav);
+        background-color: transparent;
         margin: 0 25px;
         text-transform: uppercase;
         font-size: 14px;
         display: block;
     
     }
-   
-     
+    
+    nav ul .redes-sociais a{
+        border: none;
+    }
+
+    nav ul .redes-sociais img{
+        width: 2rem;
+        position: relative;
+        top: 100px;
+    }
+    .redes-sociais{
+        display: flex;
+        background-color: transparent;
+    }
  }
