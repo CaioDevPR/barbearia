@@ -282,7 +282,8 @@ color: var(--amarelo);
     nav .close-icon{
      display: block;
      position: absolute;
-     top: 46px;
+     top: 50px;
+     right: 39px;
      height: 28px;
      color: var(--nav)
     }
