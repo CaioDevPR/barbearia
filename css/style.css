@@ -303,6 +303,38 @@ display: flex;
     margin-left: -50%;
 }
 
+.navegacao-auto div{
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navegacao-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacao-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navegacao-auto .auto-btn1{
+    background-color: var(--padrao);
+}
+#radio1:checked ~ .navegacao-auto .auto-btn2{
+    background-color: var(--padrao);
+}
+
+#radio1:checked ~ .navegacao-auto .auto-btn3{
+    background-color: var(--padrao);
+}
+
+
 
 
 
