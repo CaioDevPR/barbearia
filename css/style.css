@@ -553,6 +553,13 @@ display: flex;
         background-color: transparent;
     }
 
+    .hrnews2 {
+        margin: 0 auto;
+        width: 85%;
+        border: 1px solid #ffc35a;
+        position: relative;
+       }
+
    
     
  }
