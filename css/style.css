@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2? family= EB+Garamond:wght@400;700;800 & family= Inter:wght@500;600;700 & display=swap' );
+@import url('https://fonts.googleapis.com/css2? family= EB+Garamond:wght@400;700;800 & family= Inter:wght@500;600;700 & family= Sono: wght@200;300;400 & display=swap');
 
 *{
     margin: 0;
@@ -397,8 +398,16 @@ display: flex;
     font-size: 70px;
    }
 
-  
-main.cards{
+.container p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container h2{
+font-family:'Sono', serif ;
+}
+
+section.cards{
     display:flex;
     padding: 92px;
     
@@ -408,22 +417,23 @@ main.cards{
     color: var(--padrao);
    }
    
-   main.cards section.card .icon{
+   section.cards section.card .icon{
     width: 80px;
     height: 80px;
    }
-main.cards section.card img{
+   section.cards section.card img{
     width: 100%;
 }
-main.cards section.card  h3{
+section.cards section.card  h3{
     color: var(--nav);
     font-size: 100%;
 }
-main.cards section.card span{
+section.cards section.card span{
     color: var(--nav);
+    
 }
 
-main.cards section.card{
+section.cards section.card{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -435,7 +445,7 @@ main.cards section.card{
     margin-left: 2px; 
 }
 
-main.cards section.card button{
+section.cards section.card button{
     padding: 0.5rem 1rem;
     text-transform: uppercase;
     border-radius: 32px;
@@ -447,46 +457,64 @@ main.cards section.card button{
     color: #fff;
 }
 
-main.cards section.card.barba{
+section.cards section.card.barba{
     box-shadow: 20px 20px 50px -30px var(--amarelo);
 }
-main.cards section.card.pigmentacao{
-    box-shadow: 20px 20px 50px -30px var(--amarelo);
-}
-
-main.cards section.card.corte{
+section.cards section.card.pigmentacao{
     box-shadow: 20px 20px 50px -30px var(--amarelo);
 }
 
-main.cards section.card.sobrancelha{
+section.cards section.card.corte{
+    box-shadow: 20px 20px 50px -30px var(--amarelo);
+}
+
+section.cards section.card.sobrancelha{
     box-shadow: 20px 20px 50px -40px var(--amarelo);
 }
 
-main.cards section.card.noivo{
+section.cards section.card.noivo{
     box-shadow: 20px 20px 50px -30px var(--amarelo);
 }
 
-main.cards section.card.acabamentos{
+section.cards section.card.acabamentos{
     box-shadow: 20px 20px 50px -30px var(--amarelo);
 }
 
 /* responsive cards */ 
 
 @media (max-width: 800px){
-    main.cards{
+    section.cards{
         flex-direction: column;
     }
 
-    main.cards section.card {
+    section.cards section.card {
         margin-left: 0;
         margin-bottom: 32px;
     }
 
-    main.cards section.card:last-child{
+    section.cards section.card:last-child{
         margin-bottom: 0;
     }
 
-    
+    .container1 p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 70%;
+    }
+    .container1 .text-servicos{
+    font-family:'Sono', serif ;
+    font-family: 50px;
+    color: red;
+    }
+    .container1 {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+    height: 100%;
+    }
+
+
 }
 
 
@@ -601,7 +629,7 @@ main.cards section.card.acabamentos{
         max-width: 1000px;
         margin: 0 auto;
         padding: 0 5%;
-        height: 100vh ;
+        height: 87vh ;
         
     }
 
