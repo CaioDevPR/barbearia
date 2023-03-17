@@ -10,7 +10,7 @@
 }
 
 body{
-    background-color: var(--fundoBody);
+    background-color: var(--nav);
     overflow-x: hidden;
 }
 
@@ -144,8 +144,8 @@ nav .close-icon{
     
  }
 
- .banner-principal .banner h3{
-    font-size: 6rem;
+ .banner-principal .banner h1{
+    font-size: 4rem;
     text-align: center;
     border-radius: 10px;
     background-color: var(--black);
@@ -157,7 +157,7 @@ nav .close-icon{
     
 }
 
-.banner-principal .banner p span{
+.banner-principal .banner h1 span{
 color: var(--amarelo);
 }
 
@@ -247,6 +247,11 @@ color: var(--amarelo);
     height: 400px;
     overflow: hidden;
 }
+.slider h2{
+font-size: 2.7rem;
+color: var(--padrao);
+padding: 10px;
+}
 
 .slides {
 width: 400%;
@@ -335,9 +340,61 @@ display: flex;
 }
 
 
+/* localizacao */
+
+.precos h3{
+   
+    color: #ffc35a;
+    font-size: 70px;
+    font-family: sans-serif;
+   }
+   .precos p{
+    font-size: 1.2rem;
+    color:#fff;
+    
+   
+}
+.precos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20%;
+    justify-content: center;
+    padding: 20px 10px;
+    margin: 50px;
+    text-align: center;
+}
+
+/* hr */
+
+   .hrnews {
+    margin: 0 auto;
+    width: 85%;
+    border: 1px solid #ffc35a;
+    position: relative;
+    top: 20px;
+   }
+   .hrnews2 {
+    margin: 0 auto;
+    width: 85%;
+    border: 1px solid #ffc35a;
+    position: relative;
+    top: 20px;
+   }
 
 
-
+   .container h2 {
+    position: relative;  
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    display: flex;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 70px;
+   
+    
+   }
 
 
 
@@ -356,10 +413,22 @@ display: flex;
 
 @media (max-width: 830px){
     /* menu modile */
+    .container .precos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+    .container h2{
+        font-size: 2rem;
+    }
 
-
+    .container .precos h3,p{
+        font-size: 3rem;
+        margin: 10px auto;
+    }
     body,html{
-        overflow: hidden;
+        overflow-x: hidden;
     }
   
     .ul{
@@ -387,9 +456,7 @@ display: flex;
      font-size: 16px;
  
     }
-    .banner-principal .banner img{
-          display: none;
-    }
+   
    
     nav .menu-icon{
      display: block;
@@ -413,11 +480,10 @@ display: flex;
     }
    
      
-     .banner-principal .banner h3{
+     .banner-principal .banner h1{
         font-size: 3rem;
         text-align: right;
         border-radius: 10px;
-        background-color: var(--black);
         color: var(--padrao);
         font-weight: 900;
         margin: 23px 0;
@@ -451,6 +517,7 @@ display: flex;
         justify-content: center;
         position: relative;
         right: 30%;
+        margin-top: 50%;
      }
     
      .banner-principal .banner{
@@ -485,4 +552,7 @@ display: flex;
         display: flex;
         background-color: transparent;
     }
+
+   
+    
  }
