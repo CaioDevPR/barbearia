@@ -26,6 +26,9 @@ section,footer {
     background-color: transparent;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 .container{
     max-width: 1400px;
@@ -392,9 +395,48 @@ display: flex;
     text-transform: uppercase;
     font-weight: 900;
     font-size: 70px;
-   
-    
    }
+
+  
+main.cards{
+    display:flex;
+    padding: 92px;
+    
+}
+
+   .card h3,p,span{
+    color: var(--padrao);
+   }
+   
+   main.cards section.card .icon{
+    width: 80px;
+    height: 80px;
+   }
+main.cards section.card img{
+    width: 100%;
+}
+
+main.cards section.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: aqua;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    max-height: 260px;
+    margin-left: 2px; 
+}
+
+main.cards section.card button{
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+}
 
 
 
@@ -563,3 +605,32 @@ display: flex;
     
     
  }
+
+
+ [data-anime]{
+    opacity: 0;
+    transition: 0.3s;
+}
+
+[data-anime="left"]{
+    transform: translate3d(-50px, 0 , 0);
+}
+[data-anime="right"]{
+    transform: translate3d(50px, 0 , 0);
+}
+
+
+[data-anime] .animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+
+@keyframes animate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
