@@ -415,16 +415,23 @@ main.cards{
 main.cards section.card img{
     width: 100%;
 }
+main.cards section.card  h3{
+    color: var(--nav);
+    font-size: 100%;
+}
+main.cards section.card span{
+    color: var(--nav);
+}
 
 main.cards section.card{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: aqua;
+    background-color: var(--padrao);
     padding: 1rem 1.5rem;
     border-radius: 5px;
-    max-height: 260px;
+    max-height: 300px;
     margin-left: 2px; 
 }
 
@@ -436,6 +443,50 @@ main.cards section.card button{
     cursor: pointer;
     font-size: 80%;
     font-weight: 500;
+    background-color: var(--nav);
+    color: #fff;
+}
+
+main.cards section.card.barba{
+    box-shadow: 20px 20px 50px -30px var(--amarelo);
+}
+main.cards section.card.pigmentacao{
+    box-shadow: 20px 20px 50px -30px var(--amarelo);
+}
+
+main.cards section.card.corte{
+    box-shadow: 20px 20px 50px -30px var(--amarelo);
+}
+
+main.cards section.card.sobrancelha{
+    box-shadow: 20px 20px 50px -40px var(--amarelo);
+}
+
+main.cards section.card.noivo{
+    box-shadow: 20px 20px 50px -30px var(--amarelo);
+}
+
+main.cards section.card.acabamentos{
+    box-shadow: 20px 20px 50px -30px var(--amarelo);
+}
+
+/* responsive cards */ 
+
+@media (max-width: 800px){
+    main.cards{
+        flex-direction: column;
+    }
+
+    main.cards section.card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.cards section.card:last-child{
+        margin-bottom: 0;
+    }
+
+    
 }
 
 
